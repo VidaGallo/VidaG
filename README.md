@@ -1,12 +1,13 @@
 # VidaG
 
-  The project was done by Gabriele Pirilli and Vida Gallo. The performance was generally quite satisfactory (except for complex problems like Problem 2), but it could have been improved with a larger population and more generations.<br>
+  The project was done by Gabriele Pirilli and Vida Gallo. 
 
 <br>
 <br>
 
 ## Introduction
   Each problem (1-8) has its own set of HYPERPARAMETERS defined at the beginning of the code. To prevent overfitting, we used only the training set (80% of all the samples) to build the formula, while the test set was used to evaluate the performance on unseen data. We implemented a Symbolic Regression using the steady-state approach. We also used an ISLAND MODEL, consisting of three islands: migrants moved from Pop1 to Pop2, from Pop2 to Pop3, and from Pop3 back to Pop1. <br>
+  
   ![image](https://github.com/user-attachments/assets/a7c218c9-32cb-4bcf-b1ba-74b8b873004c)
 
 <br>
@@ -120,7 +121,13 @@ def SymbolicRegressionMULTIPOP(xx, yy, population_size=50, max_generations=100, 
 <br>
 <br>
 
-
+## Results
+The performance was generally quite satisfactory (except for complex problems like Problem 2), but it could have been improved with a larger population, more generations and further hyperparameter tuning. 
+<br>
+In particular the algorithm performed:
+1. very well with the Problems 1, 3, 4, 5, 6
+2. well with Problem 7, 8
+3. not that well with Problem 2 (it could not converge in time to a reasonable result)
 
 
 
